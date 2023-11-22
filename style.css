@@ -1,0 +1,163 @@
+/* 메뉴 및 메인폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* 임시로고 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* 카테고리 아이콘폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+:root {
+    --main-color: rgb(245, 188, 0);
+    --sub-color: #6D955B;
+    --main-width: 1200px;
+    --font-black-color: rgb(61, 61, 61);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 80px;
+    /* 상단 네비메뉴의 높이와 같음 */
+}
+
+
+
+
+/* ------------------------네비메뉴 스타일 --------------------------*/
+
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 0 2px rgb(175, 175, 175);
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    max-width: var(--main-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo p {
+    color: var(--main-color);
+    padding: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 21px;
+    margin-top: -5px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    padding: 10px;
+    margin: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+.search{
+    width: 260px;
+    height: 36px;
+    /* background-color: rgb(241, 241, 241); */
+    border: 1px solid rgb(201, 201, 201);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.search p{
+    width: 12%;
+    text-align: center;
+    color:rgb(156, 156, 156);
+}
+.search input{
+    width: 88%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+.sign {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sign a{
+    padding: 5px 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: grey;
+}
+
+/*---------------------------카테고리 스타일--------------------------*/
+
+.category {
+    width: 100%;
+    height: 120px;
+    max-width: var(--main-width);
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-item {
+    height: 100%;
+    text-align: center;
+}
+
+.category-item img {
+    height: 80%;
+}
+
+.category-item p {
+    height: 20%;
+    color: rgb(100, 100, 100);
+    margin-top: -4px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Gowun Dodum', sans-serif;
+
+}
+
+
+/* --------------------------미디어쿼리시작 -------------------------------*/
+
+@media all and (max-width: 1279px) {
+}
+
+
+@media all and (max-width: 768px) {
+}
