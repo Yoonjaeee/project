@@ -57,6 +57,10 @@ nav {
     justify-content: center;
 }
 
+.logo a{
+    text-decoration: none;
+}
+
 .logo p {
     color: var(--main-color);
     padding: 2px;
