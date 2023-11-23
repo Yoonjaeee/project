@@ -77,13 +77,14 @@ nav {
     display: flex;
 }
 
-.menu li {
+.menu li a{
     padding: 10px;
     margin: 8px;
     font-weight: bold;
     font-size: 18px;
     color: rgb(71, 71, 71);
     cursor: pointer;
+    text-decoration: none;
 }
 .search{
     width: 260px;
